@@ -1,0 +1,146 @@
+
+.navbar{
+    position: relative;
+    /* background-color: var(--VeryLightRed); */
+    background-image :linear-gradient(to left, var( --LightRed-Mobile), var( --VeryLightRed-Mobile));
+    background-size : cover;
+    height: 37.5rem;
+    border-bottom-left-radius:4rem;
+}
+
+.navbar-container{
+    position: relative;
+    z-index: 1;
+    color: var(--White);
+
+}
+
+.nav-container{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--White);
+    padding-left: 4.375rem;
+    padding-right: 10rem;
+    padding-top:3.75rem;
+    
+}
+
+
+.left-navbar ul{
+    display: flex;
+    align-items: center;
+}
+
+.left-navbar ul li:not(:last-child){
+    margin-right: 2.125rem;
+}
+
+.left-navbar button:hover{
+    text-decoration: underline;
+    color:var(--White);
+}
+
+.rigth-navbar ul{
+    display: flex;
+    align-items: center;
+}
+
+.hero-container{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 9.375rem 0;
+}
+
+.hero-description{
+    margin-top:1.5625rem ;
+    margin-bottom:3.125rem ;
+}
+
+.products-links, .company-links, .contact-links{
+    display: none;
+    position: absolute;
+    z-index: 1;
+    background-color: white;
+    font-size: 0.9rem;
+    height: auto;
+    min-width: 7rem;
+    border-radius: 0.4rem;
+    padding: 2.25rem 1.6rem;
+}
+
+.left-navbar .contact-dropdown:hover .contact-links{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.25rem;
+}
+
+
+.left-navbar .company-dropdown:hover .company-links{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.25rem;
+}
+
+
+.left-navbar .products-dropdown:hover .products-links{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.25rem;
+}
+
+.dropDown-link:hover{
+    font-weight: 600;
+}
+
+.bg-arrow{
+    display: inline-block;
+}
+
+.bg-arrow span{
+    display: block;
+    align-self: center;
+    justify-self: center;
+    width: 10px;
+    height:2px;
+    background-color: rgb(255, 255, 255);
+}
+
+.bg-arrow span:first-child{
+    transform: 
+        rotate(45deg) ;
+    transition: all 500ms ease-in-out;
+    
+}
+.bg-arrow span:last-child{
+    transform:  rotate(-45deg) 
+    translateX(6px) 
+    translateY(3px);
+    transition: all 500ms ease-in-out;
+}
+
+.products-dropdown:hover .bg-arrow span:last-child,
+.company-dropdown:hover .bg-arrow span:last-child,
+.contact-dropdown:hover .bg-arrow span:last-child{
+    
+    transform:  rotate(45deg) 
+                translateX(3px) 
+                translateY(-6px);
+    transition: all 500ms ease-in-out; 
+}
+
+.products-dropdown:hover .bg-arrow span:first-child,
+.company-dropdown:hover .bg-arrow span:first-child,
+.contact-dropdown:hover .bg-arrow span:first-child {
+   
+    transform: rotate(-45deg);
+    transition: all 500ms ease-in-out;
+
+}

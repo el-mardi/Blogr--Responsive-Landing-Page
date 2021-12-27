@@ -1,0 +1,19 @@
+/* Variables */
+:root{
+
+    /* color */
+    --LightRed: hsl(356, 100%, 66%);
+    --VeryLightRed: hsl(355, 100%, 74%);
+    --veryDarkBLue:hsl(208, 49%, 24%);
+
+    --White:hsl(0, 0%, 100%);
+    --GrayishBlue:hsl(240, 2%, 79%);
+    --VeryDarkGrayishBlue:hsl(207, 13%, 34%);
+    --VeryDarkBlackBlue: hsl(240, 10%, 16%);
+
+    --LightRed-Mobile: hsl(353, 100%, 62%);
+    --VeryLightRed-Mobile: hsl(13, 100%, 72%);
+    
+    
+
+}
